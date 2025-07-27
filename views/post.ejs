@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+
+<article class="max-w-3xl mx-auto px-6 py-12">
+  <h1 class="text-4xl font-bold mb-4 text-gray-800"><%= data.title %></h1>
+  <p class="text-gray-500 mb-6">Published on <%= data.createdAt.toDateString() %></p>
+  <div class="prose max-w-none">
+    <%= data.body %>
+  </div>
+</article>
+
+<%- include('partials/footer') %>
