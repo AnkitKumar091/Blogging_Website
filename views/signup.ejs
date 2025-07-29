@@ -2,8 +2,18 @@
 
 <div class="row justify-content-center">
   <div class="col-md-6">
-    <h2 class="text-center mb-4">🔐 Login</h2>
-    <form action="/login" method="POST">
+    <h2 class="text-center mb-4">📝 Sign Up</h2>
+    <form action="/signup" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          name="name"
+          required
+        />
+      </div>
       <div class="mb-3">
         <label for="email" class="form-label">Email address</label>
         <input
@@ -24,10 +34,10 @@
           required
         />
       </div>
-      <button type="submit" class="btn btn-primary w-100">Login</button>
+      <button type="submit" class="btn btn-success w-100">Sign Up</button>
     </form>
     <p class="text-center mt-3">
-      Don't have an account? <a href="/signup">Sign up here</a>
+      Already have an account? <a href="/login">Login here</a>
     </p>
   </div>
 </div>
